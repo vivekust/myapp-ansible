@@ -1,2 +1,6 @@
 [servers]
-192.168.49.135 ansible_user=project_node
+server2 ansible_host=192.168.49.135
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
+
