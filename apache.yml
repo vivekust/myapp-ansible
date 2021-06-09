@@ -1,6 +1,6 @@
 ---
-- hosts: all 
-  become: True
+- hosts: servers 
+  #become: True
   tasks:
     - name: Install packages
       yum:
