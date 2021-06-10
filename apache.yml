@@ -4,11 +4,11 @@
   tasks:
     - name: Install packages
       yum:
-        name: "httpd"
+        name: "https"
         state: "present"
     - name: Start Apache server
       service:
-        name: httpd
+        name: https
         state: started
         enabled: True
     - name: Deploy static website
