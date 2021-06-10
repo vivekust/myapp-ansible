@@ -2,15 +2,6 @@
 - hosts: localhost 
   become: True
   tasks:
-    - name: Install packages
-      yum:
-        name: "https"
-        state: "present"
-    - name: Start Apache server
-      service:
-        name: https
-        state: started
-        enabled: True
     - name: Deploy static website
       copy:
         src: index.html
