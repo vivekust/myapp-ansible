@@ -1,5 +1,5 @@
 [servers]
-192.168.49.135 ansible_user=node
+192.168.49.134 ansible_user=master
 
 [all:vars]
 ansible_python_interpreter=/usr/bin/python3
